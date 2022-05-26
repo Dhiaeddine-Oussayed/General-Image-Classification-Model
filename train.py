@@ -2,6 +2,7 @@ import os
 import cv2
 import numpy as np
 from tqdm import tqdm
+from pickle import dump
 from random import shuffle
 from datetime import datetime
 from tensorflow.keras import Sequential
@@ -79,4 +80,5 @@ results = model.evaluate(x_test, y_test)
 print("test loss, test acc:", results)
 
 model.save('classification_model')
-
+with open('encoder.pkl', 'wb') as f:
+    dump(encoder, f)
