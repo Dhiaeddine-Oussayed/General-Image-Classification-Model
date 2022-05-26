@@ -78,4 +78,5 @@ print("Evaluate on test data")
 results = model.evaluate(x_test, y_test)
 print("test loss, test acc:", results)
 
+model.save('classification_model')
 
