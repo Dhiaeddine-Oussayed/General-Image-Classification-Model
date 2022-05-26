@@ -28,7 +28,7 @@ With :
   - "MAIN_DIRECTORY" is a folder having all your sub-folders.
   - "1st class, 2nd class... last class" are the sub-folders containing the images you intend to classify.
 
-N.B: Your labels will have the same name as your sub-folders name as the sub-folders are the classes.
+P.N: Your labels will have the same name as your sub-folders name as the sub-folders are the classes.
 
 When training is done you will have a link to check the tensorboard callbacks and the evaluation accuracy of your model.
 The "predict.py" file contains a pre-built function that you can use to test your model.
@@ -38,3 +38,4 @@ the function takes as arguments:
  - The label encoder fitted on your training data. Try importing the encoder file using pickle.load(open("path to your encoder", "rb"))
 
 
+P.N: You can customize the "train.py" file as you see fit. You can change the the size of the images, dimension, the number of convolutional layers and their filters, the structure of the fully connected neural network...
